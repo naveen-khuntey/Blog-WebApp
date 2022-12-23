@@ -1,0 +1,15 @@
+<%- include("partials/header") %> 
+<link rel="stylesheet" href="/css/styles.css">
+<%- include("partials/headerdown") %> 
+
+<h1>HOME</h1>
+<p><%= homecontent %></p>
+<p><%= homecontent %></p>
+
+<%   publish.forEach(function(e){ %>
+    <h2><%= e.titlepost %> </h2>
+    <p><%= e.messagepost.substring(0,100) %>...<a href="/post/<%= e.titlepost %>">read more</a></p>
+<%  }) %>
+ 
+
+<%- include("partials/footer") %>  

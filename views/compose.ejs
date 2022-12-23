@@ -1,0 +1,18 @@
+<%- include("partials/header") %> 
+    <link rel = "stylesheet" type = "text/css" href = "css/contactstyle.css">
+<%- include("partials/headerdown") %> 
+        <form class="form" action="#" method="post">
+            <div class = "heading">
+                <h1 class="main_heading">Compose</h1>
+                <h4 class="sub_heading">Please fill all the texts in the fields.</h4>
+            </div>
+            <div class = "fields">
+                <label for="textgiven">Title :</label>
+                <input type="text" name="textgiven" autocomplete="off">
+                <label for="messafegiven">Message :</label>
+                <textarea name="messagegiven" cols="50" rows="9"></textarea>
+            </div>
+            <button type="submit">PUBLISH</button>
+        </form> 
+ 
+<%- include("partials/footer") %>
